@@ -8,6 +8,7 @@ import MobileMenu from '../MobileMenu'
 import UnstyledButton from '../UnstyledButton'
 import Icon from '../Icon'
 import VisuallyHidden from '../VisuallyHidden'
+import NavLink from '../NavLink'
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = React.useState(false)
@@ -28,7 +29,7 @@ const Header = () => {
           <NavLink href='/sale'>Sale</NavLink>
           <NavLink href='/new'>New&nbsp;Releases</NavLink>
           <NavLink href='/men'>Men</NavLink>
-          <NavLink href='/women'>Women</NavLink>
+          <NavLink href='/woman'>Woman</NavLink>
           <NavLink href='/kids'>Kids</NavLink>
           <NavLink href='/collections'>Collections</NavLink>
         </DesktopNav>
@@ -116,18 +117,6 @@ const Filler = styled.div`
 
   @media (${QUERIES.tabletAndSmaller}) {
     display: none;
-  }
-`
-
-const NavLink = styled.a`
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: var(--color-gray-900);
-  font-weight: var(--font-medium);
-
-  &:first-of-type {
-    color: var(--color-secondary);
   }
 `
 
