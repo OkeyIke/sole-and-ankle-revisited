@@ -137,6 +137,11 @@ const Flag = styled.div`
   font-weight: var(--font-bold);
   color: var(--color-white);
   border-radius: 2px;
+
+  ${Link}:hover &, ${Link}:focus & {
+    transform: translateY(-50%);
+    transition: transform 300ms;
+  }
 `
 
 const SaleFlag = styled(Flag)`
