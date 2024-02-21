@@ -137,6 +137,7 @@ const Flag = styled.div`
   font-weight: var(--font-bold);
   color: var(--color-white);
   border-radius: 2px;
+  transition: transform 700ms;
 
   ${Link}:hover &, ${Link}:focus & {
     transform: translateY(-50%);
